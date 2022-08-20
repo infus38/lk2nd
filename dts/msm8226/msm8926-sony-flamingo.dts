@@ -10,4 +10,6 @@
 		<224 0>, 
 		<200 0x10001>, 
 		<224 0x10001>;
+
+	lk2nd,recovery-partition-name = "FOTAKernel";
 };
