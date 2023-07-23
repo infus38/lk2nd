@@ -43,6 +43,7 @@ struct lk2nd_device {
 	const char *carrier;
 	const char *radio;
 	const char *recpartname;
+	const char * band_select;
 
 	const char *battery;
 	const struct smb1360 *smb1360;

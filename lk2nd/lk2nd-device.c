@@ -92,6 +92,7 @@ static void parse_boot_args(void)
 			parse_arg(suffix, "serialno=", &lk2nd_dev.serialno);
 			parse_arg(suffix, "carrier=", &lk2nd_dev.carrier);
 			parse_arg(suffix, "radio=", &lk2nd_dev.radio);
+			parse_arg(suffix, "band_select=", &lk2nd_dev.band_select);
 		} else if (suffix = strpresuf(arg, "lk2nd.")) {
 			parse_arg(suffix, "compatible=", &lk2nd_dev.compatible);
 			parse_arg(suffix, "panel=", &lk2nd_dev.panel.name);
