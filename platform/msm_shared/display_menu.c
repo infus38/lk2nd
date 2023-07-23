@@ -463,6 +463,10 @@ void display_fastboot_menu_renew(struct select_msg_info *fastboot_msg_info)
 		display_fbcon_menu_message("MODEL - Unknown (FIXME!)\n",
 					   FBCON_RED_MSG, common_factor);
 	}
+	if (lk2nd_dev.band_select) {
+		snprintf(msg, sizeof(msg), "BAND - %s\n", lk2nd_dev.band_select);
+		display_fbcon_menu_message(msg, FBCON_COMMON_MSG, common_factor);
+	}
 #endif
 
 	memset(msg_buf, 0, sizeof(msg_buf));
