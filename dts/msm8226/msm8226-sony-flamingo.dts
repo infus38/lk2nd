@@ -1,0 +1,20 @@
+/dts-v1/;
+
+#include <skeleton.dtsi>
+
+/ {
+	model = "Qualcomm MSM 8226 (Arima 8226SS)";
+	compatible = "sony,flamingo", "qcom,msm8226", "lk2nd,device";
+	qcom,board-id = <8 0>;
+	qcom,msm-id = <145 0x20000>,
+		<158 0x20000>,
+		<159 0x20000>,
+		<198 0x20000>,
+		<205 0x20000>,
+		<220 0x20000>,
+		<221 0x20000>,
+		<222 0x20000>,
+		<223 0x20000>;
+
+	lk2nd,recovery-partition-name = "FOTAKernel";
+};
