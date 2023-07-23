@@ -641,7 +641,6 @@ unsigned char *update_cmdline(const char *cmdline)
 	/* Only add to cmdline if downstream or lk2nd */
 	if (!lk2nd_cmdline_scan(cmdline, "androidboot.hardware=qcom") &&
 	    !lk2nd_cmdline_scan(cmdline, "androidboot.hardware=bacon") &&
-	    !lk2nd_cmdline_scan(cmdline, "androidboot.hardware=sony") &&
 	    !lk2nd)
 		return strdup(cmdline);
 
