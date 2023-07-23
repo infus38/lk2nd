@@ -3,7 +3,7 @@
 #include <skeleton.dtsi>
 
 / {
-	model = "Qualcomm MSM 8226 (Arima 8226SS)";
+	model = "Qualcomm MSM 8226 (Arima 8226)";
 	compatible = "sony,flamingo", "qcom,msm8226", "lk2nd,device";
 	qcom,board-id = <8 0>;
 	qcom,msm-id = <145 0x20000>,
